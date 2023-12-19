@@ -14,3 +14,4 @@
 - JsoupUtil，比较主流的html、xml解析工具
 - MinioUtil，进一步封装了minioAPI接口，简化操作流程
 - RedisUtil，基于Springboot的redisTemplate类的封装，简化redis操作流程
+- CodeGenerator，根据数据表，生成代码，可直接生成CURD代码
