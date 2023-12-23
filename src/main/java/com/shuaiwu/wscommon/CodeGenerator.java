@@ -9,7 +9,8 @@ import java.sql.Types;
 public class CodeGenerator {
     public static void main(String[] args) {
         FastAutoGenerator.create(
-                "jdbc:mysql://127.0.0.1:3306/ws-book?characterEncoding=utf8&useSSL=false", "root",
+                "jdbc:mysql://192.168.0.244:3306/ws-book?characterEncoding=utf8&useSSL=false",
+                "root",
                 "2wsx#EDC")
             .globalConfig(builder -> {
                 builder.author("shuaiwu") // 设置作者

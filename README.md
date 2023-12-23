@@ -5,7 +5,7 @@
 ## 集成的组件
 - 使用AOP，实现controller请求、返回日志的记录
 - 定义了全局异常处理
-- 集成SpringDoc
+- 集成SpringDoc，用于生成接口文档
 - 集成Redis
 - 集成MybatisPlus
 
