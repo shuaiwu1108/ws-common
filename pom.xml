@@ -20,7 +20,6 @@
 		<springdoc-openapi-ui.version>1.6.15</springdoc-openapi-ui.version>
 		<knife4j-springdoc-ui.version>3.0.3</knife4j-springdoc-ui.version>
 		<jwt.version>0.11.2</jwt.version>
-		<flyway.version>7.15.0</flyway.version>
 		<minio.version>8.5.7</minio.version>
 		<jsoup.version>1.17.1</jsoup.version>
 		<okhttp3.version>4.9.3</okhttp3.version>
@@ -90,12 +89,6 @@
 			<groupId>cn.hutool</groupId>
 			<artifactId>hutool-all</artifactId>
 			<version>${hutool.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.flywaydb</groupId>
-			<artifactId>flyway-core</artifactId>
-			<version>${flyway.version}</version>
 		</dependency>
 
 		<dependency>
