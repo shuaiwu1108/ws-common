@@ -3,6 +3,7 @@ com\shuaiwu\wscommon\config\RedisConfig.class
 com\shuaiwu\wscommon\utils\ElasticSearchUtil.class
 com\shuaiwu\wscommon\CodeGenerator.class
 com\shuaiwu\wscommon\utils\CommonUtil.class
+com\shuaiwu\wscommon\dto\BaseModel.class
 com\shuaiwu\wscommon\config\RedisObjectMapper.class
 com\shuaiwu\wscommon\utils\JsoupUtil.class
 com\shuaiwu\wscommon\utils\RedisKeys.class

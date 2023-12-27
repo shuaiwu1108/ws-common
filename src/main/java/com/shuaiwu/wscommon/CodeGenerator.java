@@ -27,11 +27,11 @@ public class CodeGenerator {
                 }))
             .packageConfig(builder -> {
                 builder.parent("com.shuaiwu") // 设置父包名
-                    .moduleName("XXX") // 设置父包模块名
+                    .moduleName("wsequip") // 设置父包模块名
                 ;
             })
             .strategyConfig(builder -> {
-                builder.addInclude("XXX") // 设置需要生成的表名
+                builder.addInclude("equip,equip_type,equip_model") // 设置需要生成的表名
                     .entityBuilder().enableLombok().enableTableFieldAnnotation().enableFileOverride()
                     .controllerBuilder().enableRestStyle().enableFileOverride()
                     .serviceBuilder().enableFileOverride()
