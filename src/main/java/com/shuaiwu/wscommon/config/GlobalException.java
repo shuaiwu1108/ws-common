@@ -15,7 +15,7 @@ public class GlobalException {
 
     @ExceptionHandler(AccessDeniedException.class)
     public Object accessDeniedException(AccessDeniedException e){
-        log.error("授权异常", e.getMessage());
+        log.error("授权异常[{}]", e.getMessage());
         HashMap<String, String> res = new HashMap<>();
         res.put("code", "50001");
         res.put("status", "error");
@@ -25,7 +25,7 @@ public class GlobalException {
 
     @ExceptionHandler(AuthenticationException.class)
     public Object authenticationException(AuthenticationException e){
-        log.error("认证异常", e.getMessage());
+        log.error("认证异常[{}]", e.getMessage());
         HashMap<String, String> res = new HashMap<>();
         res.put("code", "50002");
         res.put("status", "error");
@@ -33,9 +33,9 @@ public class GlobalException {
         return res;
     }
 
-    @ExceptionHandler(ServletException.class)
+    @ExceptionHandler({ServletException.class})
     public Object tokenValidateException(ServletException e){
-        log.error("异常", e.getMessage());
+        log.error("异常[{}]", e.getMessage());
         HashMap<String, Object> res = new HashMap<>();
         res.put("code", 50008);
         res.put("status", "error");
